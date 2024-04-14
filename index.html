@@ -1,23 +1,106 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>FRICK's blog</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css">
-    </head>
-
-    <body>
-        <h1 class="heading">
-            <a href="index.html">FRICK's blog</a>
-        </h1>
-        <p class="date"></p>
-        <ul>
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>FRICKのコンテンツ</title>
+    <link rel="shortcut icon" href="images/frick-icon.png"/>
+    <!-- TAILWIND + DAISY UI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- TAILWIND CONFIG -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "color-prim-1": "#FF8938 ",
+              "color-prim-2": "#F00",
+              "color-dark": "#1C1C1C",
+              "color-gray": "#777",
+              "color-white": "#F4F4F4",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
     
-    <li>
-        2023-05-27: <a href="2023-05-27-my-first-blog-post.html"> My first blog post </a>
-    </li>
-    
-</ul>
-
-    </body>
+  <body class="bg-slate-900 text-gray-100">
+    <div class="mx-auto max-w-screen-lg px-3 py-6">
+      <!-- Header -->
+      <div class="flex flex-col gap-y-3 sm:flex-row sm:items-center sm:justify-between">
+        <a href="https://frick-eldy.github.io">
+          <div class="flex items-center bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-xl font-bold text-transparent">
+            <img src="./images/frick-icon.png" class="mr-1 h-10 w-10 stroke-cyan-600" />
+            FRICK's HP
+          </div>
+        </a>
+        <nav>
+          <ul class="flex gap-x-3 font-medium text-gray-200 ml-2">
+            <li class=""><a href="https://github.com/FRICK-ELDY">GitHub</a></li>
+            <li class=""><a href="https://twitter.com/TewiEwi_no96">Twitter</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Profile -->
+      <div class="flex flex-col items-center md:flex-row md:justify-between md:gap-x-24 mt-4">
+        <div>
+          <h1 class="text-2xl font-bold">
+            <span class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent">FRICK</span>
+            のHPへようこそ ！
+          </h1>
+          <div class="md:relative top-5 left-6">
+            <p class="text-xl leading-9"> プログラミングを主軸に生きています。</p>
+            <p class="text-xl leading-9"> 得意な言語はC++とElixirです。</p>
+            <p class="text-xl leading-9"> 活動のリンクをまとめたもサイトなります。</p>
+            <p class="text-xl leading-9"> 興味をもっていただけると幸いですω</p>
+          </div>
+        </div>
+        <div class="avatar mt-4">
+          <div class="h-80 w-80 rounded-full">
+            <img src="./images/firck-face.png" />
+          </div>
+        </div>
+      </div>
+      <!-- card -->
+      <h1 class="text-2xl font-bold mt-4">
+        所属コミュニティ
+      </h1>
+     
+      <div class="grid md:grid-cols-3 gap-8 md:gap-4 mt-4">
+        <!-- reso_r_exercise -->
+        <div class="card bg-base-100 shadow-xl">
+          <figure><img src="./images/reso_r_exercise_Icon.png" alt="reso_r_exercise" class="object-cover object-top h-48 w-96"/></figure>
+          <div class="card-body">
+            <h2 class="card-title">Resoniteラジオ体操部</h2>
+            <p>役割 : 主催</p>
+            <p>場所 : Resonite</p>
+            <p>時間 : 7:00~7:15</p>
+            <div class="card-actions justify-end">
+              <a class="btn btn-primary" href="https://reso-r-exercise.github.io/" target="_blank">Jamp WebSite</a>
+            </div>
+          </div>
+        </div>
+        <!-- reso_r_exercise -->
+        <div class="card bg-base-100 shadow-xl">
+          <figure><img src="./images/elixir-imp-icon.png" alt="reso_r_exercise" class="object-cover object-top h-48 w-96"/></figure>
+          <div class="card-body">
+            <h2 class="card-title">ElixirImp</h2>
+            <p>役割 : 主催 & 司会</p>
+            <p>場所 : Zoom ( connpass )</p>
+            <p>時間 : 第三水曜日 19:30~21:00</p>
+            <div class="card-actions justify-end">
+              <a class="btn btn-primary" href="https://fukuokaex.connpass.com/" target="_blank">Jamp WebSite</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>      
+  </body>
 </html>
