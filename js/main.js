@@ -8,7 +8,9 @@ document.addEventListener("DOMContentLoaded", function() {
       loadHTML("world", "layouts/world.html", function() {
         loadScript("js/slide-world.js");
       });
-      loadHTML("avatar", "layouts/avatar.html");
+      loadHTML("avatar", "layouts/avatar.html", function() {
+        loadScript("js/slide-avatar.js");
+      });
       loadHTML("item", "layouts/item.html");
     });
   });
