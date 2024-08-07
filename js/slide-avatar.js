@@ -36,7 +36,7 @@ function createSlide({ id, img, caption }, index, totalSlides) {
 function createNavigationButtons(totalSlides) {
   let buttons = '';
   for (let i = 0; i <= totalSlides; i++) {
-    buttons += `<a href="#${id_name}${i}" class="btn btn-xs">${i}</a>`;
+    buttons += `<a href="#avatar${i}" class="btn btn-xs">${i}</a>`;
   }
   return buttons;
 }
